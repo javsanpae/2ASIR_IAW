@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 1px solid black;
+            margin: 20px;
+        }
+        legend {
+            border: 1px solid black;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+        }
+        label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="firstForm.php" method="GET">
+
+    <legend>REGISTER FOR FNATIC <strong>NOW!</strong></legend>
+    
+    <label for="username">USERNAME:</label>
+    <input type="text" name="username" id="username"/>
+
+    <br/>
+
+    <label for="email">EMAIL:</label>
+    <input type="email" name="email" id="email">
+<!--
+    <br/>
+
+    <label for="passwd">PASSWORD:</label>
+    <input type="password" name="passwd" id="passwd">
+
+    <br/>
+
+    <label for="reason">TELL US A REASON WHY YOU WANT TO REGISTER:</label>
+    <input type="text" name="reason" id="reason" minlength="10">
+
+    <hr/>
+
+    <label for="favgame">Your favourite videogame is...</label>
+
+    <br/>
+    <label for="game1">Counter Strike: Global Offensive</label>
+    <input type="checkbox" name="game1" value="csgo" id="game1">
+    <br/>
+    <label for="game2">League of Legends</label>
+    <input type="checkbox" name="game2" value="lol" id="game2">
+    <br/>
+    <label for="game3">Valorant</label>
+    <input type="checkbox" name="game3" value="valorant" id="game3">
+    <br/>
+    <label for="game4">Hello Kitty: Battle Royale</label>
+    <input type="checkbox" name="game4" value="hkbr" id="game4">
+
+
+
+
+
+    <hr/>
+
+    <label for="purpose">What is your purpose being here?</label>
+
+    <br/>
+
+    <label for="havefun">Having some fun with my partners</label>
+    <input type="radio" name="purpose" id="havefun">
+
+    <br/>
+
+    <label for="competitive">Gain experience on the competitive world</label>
+    <input type="radio" name="purpose" id="competitive">
+
+    <br/>
+
+    <label for="famous">Be famous and be a gaming reference</label>
+    <input type="radio" name="purpose" id="famous">
+
+    <hr/>
+
+
+
+    <hr/>
+
+
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Write here your biography"></textarea>
+-->
+    <br/>
+
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+
+    </form>
+
+
+
+
+
+
+
+
+    <?php
+    ?>
+
+</body>
+</html>
