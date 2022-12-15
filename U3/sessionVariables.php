@@ -1,3 +1,6 @@
+<?php
+    session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +10,15 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="mathsForm.php" method="GET">
+    <?php
 
-        <input type="number" name="value1" id="v1"/>
+    $_SESSION['nameSession'] = $_POST["name"];
+    $_SESSION['surnamesSession'] = $_POST["surnames"];
 
-        <input type="number" name="value2" id="v2"/>
+    echo '<p>Haga click abajo para continuar</p>';
 
-        <input type="submit" value="SUBMIT"/>
+    echo '<a href="sessionVariables2.php">CLIC</a>';
+    ?>
 
-    </form>
 </body>
 </html>

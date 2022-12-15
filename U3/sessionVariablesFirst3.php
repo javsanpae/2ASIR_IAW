@@ -1,3 +1,6 @@
+<?php
+    session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +10,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="mathsForm.php" method="GET">
+    <?php
 
-        <input type="number" name="value1" id="v1"/>
+    $_SESSION['rol'] = 'proveedor';
 
-        <input type="number" name="value2" id="v2"/>
+    var_dump($_SESSION['rol']);
 
-        <input type="submit" value="SUBMIT"/>
 
-    </form>
+    ?>
+    
 </body>
 </html>
+<?php
+    session_unset();
+    var_dump($_SESSION);
+?>

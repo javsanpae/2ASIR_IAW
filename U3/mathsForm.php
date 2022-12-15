@@ -17,25 +17,29 @@
 <body>
     
     <?php 
+
+    $value1 = $_GET['value1'];
     
-    $_1value = $_POST["_1number"];
-    
-    $_2value = $_POST["_2number"];
+    $value2 = $_GET['value2'];
 
 
-    echo 'La suma de los números es ', $_1value + $_2value;
+    echo 'La suma de los números es ', $value1 + $value2;
 
     echo '<br/>';
 
-    echo 'La resta de los números es ', $_1value - $_2value;
+    echo 'La resta de los números es ', $value1 - $value2;
 
     echo '<br/>';
 
-    echo 'La multiplicación de los números es ', $_1value * $_2value;
+    echo 'La multiplicación de los números es ', $value1 * $value2;
 
     echo '<br/>';
 
-    echo 'La división de los números es ', $_1value / $_2value;
+    echo 'La división de los números es ', $value1 / $value2;
+
+    echo '<br/>';
+
+    echo 'El módulo de los números es ', $value1 % $value2;
 
     
     ?>

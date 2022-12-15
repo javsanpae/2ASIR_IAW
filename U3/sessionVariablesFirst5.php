@@ -1,3 +1,6 @@
+<?php
+    session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +10,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="mathsForm.php" method="GET">
-
-        <input type="number" name="value1" id="v1"/>
-
-        <input type="number" name="value2" id="v2"/>
-
-        <input type="submit" value="SUBMIT"/>
-
-    </form>
+    <?php
+    session_destroy();
+    var_dump($_SESSION['usuario']);
+    ?>
+    
 </body>
 </html>
