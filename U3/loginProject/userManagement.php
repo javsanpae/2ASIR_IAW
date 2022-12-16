@@ -1,5 +1,5 @@
 <?php
-    session_start()
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@
         
         echo "<a href='password.php'>Cambiar su contraseña</a>";
         echo "<br/>";
-        echo "<a href='username.php'>Cambiar su nombre de usuario</a>";
+        echo "<a href='suc.php'>Cambiar su nombre de usuario</a>";
         echo "<br/>";
         echo "<a href='mail.php'>Cambiar su correo electrónico</a>";
         

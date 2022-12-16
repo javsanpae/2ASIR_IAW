@@ -1,5 +1,9 @@
 <?php
-    session_start()
+    session_start();
+    $_SESSION["users"] = array(
+        "javsanpae" => "1234",
+        "anonymous" => "1234"
+    );
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,31 +16,29 @@
 <body>
     <?php
 
-    $users = array(
-        "javsanpae" => "1234",
-        "anonymous" => "1234"
-    );
+    $username = $_POST["username"];
+    $pass = $_POST["pass"];
 
-    if ($_POST["username"] == "") {
-        echo "<p>Usuario vacío. Por favor, inténtelo de nuevo.</p>";
+    $users = $_SESSION["users"];
+
+    if ($username == "") {
+        $msg = "<p>Usuario vacío.</p>";
     } else {
-        foreach ($users as $username => $password) {
-            if ($_POST["username"] == $username and $_POST["pass"] == $password) {
-                $_SESSION["username"] = $_POST["username"];
-                echo "<p>El inicio de sesión ha sido satisfactorio. <a href='userManagement.php'>Inicio.</a></p>";
+        foreach ($users as $uname => $password) {
+            if ($username == $uname && $pass == $password) {
+                $msg = "<p>Inicio de sesión satisfactorio. <a href='userManagement.php'>Inicio.</a></p>";
+                $_SESSION["username"] = $username;
                 break;
-            } 
-            //     else if ($_POST["username"] != $username) {
-            //     echo "<p>El usuario no existe</p>";
-                
-            // } else if ($_POST["username"] == $username and $_POST["pass"] != $password) {
-            //     echo "<p>La contraseña es incorrecta</p>";  
-            // }
-        }
+            } else if ($username != $uname) {
+                $msg = "<p>Usuario incorrecto.</p>";
+            } else if ($username == $uname && $pass != $password) {
+                $msg = "<p>Contraseña incorrecta.</p>";
+            }
+        } 
     }
-    
-    
+    echo $msg;
 
+    
 
 
     ?>
