@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    $_SESSION["users"] = array(
+        "javsanpae" => "1234",
+        "anonymous" => "1234",
+        "admin" => "admin",
+        "webmaster" => "webmaster",
+        "usuario" => "usuario",
+        "andared" => "llevalatararaunvestidoblancollenodecascabeles"
+    );
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +27,7 @@
         <input type="password" name="pass" id="pass">
 
 
-        <input type="submit" value="SEND" name="btnlogin">
+        <input type="submit" value="SEND">
         <input type="reset" value="RESET">
 
     </form>

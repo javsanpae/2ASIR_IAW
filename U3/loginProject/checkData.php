@@ -1,9 +1,5 @@
 <?php
     session_start();
-    $_SESSION["users"] = array(
-        "javsanpae" => "1234",
-        "anonymous" => "1234"
-    );
 ?>
 <!DOCTYPE html>
 <html lang="en">

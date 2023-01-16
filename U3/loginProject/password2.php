@@ -21,7 +21,6 @@
         } else {
             $_SESSION["users"][$_SESSION["username"]] = $_POST["newPass"];
             $msg = "<p>Su contraseña ha sido modificada correctamente.</p>";
-            var_dump($_SESSION["users"][$_SESSION["username"]]);
         }
     
     echo $msg, "<a href='userManagement.php'>Inicio.</a>";
