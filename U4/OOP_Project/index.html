@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="output.php" method="post">
+        <legend>Fill in with your data.</legend>
+        <label for="name">Your name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="nif">Your NIF/CIF:</label>
+        <input type="text" name="nif" id="nif" required>
+
+        <label for="addr">Your address:</label>
+        <input type="text" name="addr" id="addr" required>
+
+        <label for="invNum">Invoice number:</label>        
+        <input type="number" name="invNum" id="invNum" required>
+
+        <label for="invDate">Invoice date:</label>
+        <input type="date" name="invDate" id="invDate" required>
+
+        <label for="serv">Service performed:</label>
+        <input type="text" name="serv" id="serv" required>
+
+        <label for="priceNOIVA">Price without IVA:</label>
+        <input type="number" name="priceNOIVA" id="priceNOIVA" required>
+
+        <div class="formbtns">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

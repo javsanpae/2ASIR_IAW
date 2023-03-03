@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-color: #e3e3e3;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #233142;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #e3e3e3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #e3e3e3;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #51E2F5;
+    color: black;
+  }
+
+  td {
+    margin-left: 2%;
+  }
+
+form {
+  border: 1px solid black;
+  margin: 2% 2% 2% 2%;
+}
+
+p, h1, h2 {
+  margin-left: 1%;
+}
+
+  .welcome {
+    text-align: right;
+  }
+
+  img.profpic {
+    width: 10%; 
+    height: 10%; 
+    margin-left: 2%;
+    border: 1px solid black;
+  }
+
+table.orderlist tr td, table.orderlist tr th {
+  border: 1px solid black;
+}
+
+table {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+th {
+  background-color: #233142;
+  color: #e3e3e3;
+}
+
+  .index {
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .index h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+  }
+
+  .index p {
+    margin-bottom: 5%;
+    font-size: 1.2vw;
+  }
+
+  .index img {
+    border-radius: 30%;
+    width: 15%;
+    height: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    border: 3px solid black;
+  }
+
+  .index img:hover {
+    filter: brightness(150%);
+  }
+
+  .index h2, .index ul {
+    text-align: left;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 1vw;
+    background-color: #233142;
+    color: #e3e3e3;
+    text-align: center;
+  }
+
+  .whyus {
+    border: 1px solid black;
+    background-color: #233142;
+    padding-bottom: 1%;
+    color: #e3e3e3;
+    margin-top: 5%;
+    margin-bottom: 5%;  
+  }
+
+  .whyus h2 {
+    text-align: center;
+    font-size: 1.8vw;
+  }
+
+  .whyus li {
+    color: #e3e3e3;
+    font-size: 1.2vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .whyus a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #e3e3e3;
+  }
+

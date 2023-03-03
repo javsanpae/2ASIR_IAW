@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="checkout.php" method="post">
+
+        <label for="arrDate">Arrival Date:</label>
+        <input type="date" name="arrDate" id="arrDate">
+
+        <label for="depDate">Departure Date:</label>
+        <input type="date" name="depDate" id="depDate">
+
+        <label for="cusName">Customer's Name:</label>
+        <input type="text" name="cusName" id="cusName">
+
+        <label for="roomsNumber">Number of bedrooms:</label>
+        <input type="number" name="roomsNumber" id="roomsNumber">
+
+        <label for="aduNumber">Number of adults:</label>
+        <input type="number" name="aduNumber" id="aduNumber" min="1">
+
+        <label for="babyNumber">Number of babies:</label>
+        <input type="number" name="babyNumber" id="babyNumber" min="0">
+
+        <label for="childNumber">Number of children:</label>
+        <input type="number" name="childNumber" id="childNumber" min="0">
+
+        <label for="breakfast">Do you want to include breakfast?</label>
+        <label for="yes">Yes</label>
+        <input type="checkbox" name="breakfast" id="yes">
+
+        <label for="yes">BREAKFAST NOT WORKING, ENABLE IT IN ORDER TO GO FORWARD</label>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

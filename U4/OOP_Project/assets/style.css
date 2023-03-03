@@ -1,0 +1,93 @@
+/* form.html styles */
+
+form {
+    border: 1px solid black;
+    width: 80%;
+    margin-top: 20%;
+    margin: 0 auto;
+}
+
+legend {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #b1b1b1;
+    border: 1px solid black;
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+label {
+    margin-left: 2vw;
+}
+.formbtns {
+    text-align: center;
+}
+input {
+    width: 7vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+}
+
+
+/* output.php styles */
+
+tr, th {
+    border: 1px solid black;
+}
+
+th {
+    font-size: 2vw;
+    background-color: #b1b1b1;
+}
+
+td {
+    text-align: right;
+    font-size: 1.4vw;
+}
+
+p {
+    font-size: 1.7vw;
+    margin-left: 2vw;
+    width: 20%;
+}
+
+.from {
+    margin-left: auto;
+    margin-right: 2vw;
+    text-align: right;
+}
+
+img {
+    width: 8vw;
+    height: 8vw;
+    display: block;
+    margin-left: auto;
+    margin-right: 2vw;
+}
+
+table {
+    width: 100%;
+}
+
+h1 {
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 3vw;
+    color: #b1b1b1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+caption {
+    font-size: 1.2vw;
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+.item {
+    border: 1px solid black;
+}
+
+.table {
+    margin-top: 50px;
+}
